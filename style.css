@@ -159,7 +159,7 @@ a {
 }
 
 .container .mimg img { 
-  max-width: 350px;
+  max-width: 250px;
   height: auto;
 }
 
@@ -208,6 +208,11 @@ a {
   }
   .container .content-header {    
     text-align: left;
+  }
+    
+  .container .mimg img { 
+    max-width: 350px;
+    height: auto;
   }
 }
 
