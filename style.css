@@ -112,7 +112,7 @@ a {
 }
 
 .header .menu-btn:checked ~ .menu {
-  max-height: 240px;
+  max-height: 300px;
 }
 
 .header .menu-btn:checked ~ .menu-icon .nav-icon {
@@ -134,9 +134,9 @@ a {
   background-color: rgba(255, 255, 255, 0.7);
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
   margin: 0 auto;
-  max-width: 1680px;
+  max-width: 1440px;
   padding: 20px;
-  font-size: 20px;
+  font-size: 18px;
   color: #444;
 }
 
@@ -159,7 +159,7 @@ a {
 }
 
 .container .mimg img { 
-    width: 100%;
+  width: 100%;
   max-width: 250px;
   height: auto;
 }
@@ -184,6 +184,15 @@ a {
   display: none;
 }
 
+.article img {
+  display: block;
+  filter: drop-shadow(5px 5px 5px #666);
+  margin: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  max-width: 600px;
+}
 
 /*            */
 /*   Media    */
@@ -211,9 +220,15 @@ a {
     text-align: left;
   }
     
-  .container .mimg img { 
+  .container .mimg img {
     max-width: 350px;
     height: auto;
+  }
+    
+  .article img {
+      filter: drop-shadow(5px 5px 5px #666);
+      width: 55%;
+      max-width: 600px;
   }
 }
 
@@ -238,4 +253,10 @@ a {
     display: inline-block;
     margin-right: 7%;
   }
+  .article img {
+      filter: drop-shadow(5px 5px 5px #666);
+      width: 45%;
+      max-width: 1200px;
+  }
 }
+
