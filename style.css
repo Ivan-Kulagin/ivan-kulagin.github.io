@@ -194,6 +194,36 @@ a {
   max-width: 600px;
 }
 
+#button {
+  display: inline-block;
+  background: hsl(0, 0%, 100%, 0.5) url(images/to-top.svg) no-repeat;
+  background-position: center, center;
+  background-size: 40%;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  border-radius: 2px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  transition: background-color .5s, opacity 1s, visibility .8s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  box-shadow: 0 0 10px rgba(0,0,0,.05);
+}
+#button:hover {
+  cursor: pointer;
+  background-color:hsl(0, 0%, 100%, 0.85);
+}
+#button:active {
+  background-color: hsl(0, 0%, 100%);
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
 /*            */
 /*   Media    */
 /*            */
@@ -229,6 +259,12 @@ a {
       filter: drop-shadow(5px 5px 5px #666);
       width: 45%;
       max-width: 600px;
+  }
+  #button {
+      width: 50px;
+      height: 50px;
+      bottom: 30px;
+      right: 30px;
   }
 }
 
